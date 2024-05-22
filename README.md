@@ -20,8 +20,8 @@ This microservice provides personalized motivational quotes to users, allowing t
 ### Installation
 1. **Clone the Repository**:
     ```bash
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/alherrera-cs/Motivational_quote_microservice.git
+    cd Motivational_quote_microservice
     ```
 
 2. **Set up the Virtual Environment**:
@@ -32,7 +32,7 @@ This microservice provides personalized motivational quotes to users, allowing t
 
 3. **Install Dependencies**:
     ```bash
-    pip install Flask click requests
+    pip install -r requirements.txt
     ```
 
 ### Running the Microservice
@@ -108,6 +108,12 @@ This microservice provides personalized motivational quotes to users, allowing t
     python cli.py get-category-quote
     python cli.py get-favorites
     ```
+
+## UML Sequence Diagram
+
+Here is the sequence of interactions in the microservice:
+
+![UML Sequence Diagram](images/uml-diagram.png)
 
 ## Mitigation Plan
 
