@@ -117,10 +117,10 @@ Here is the sequence of interactions in the microservice:
 
 ## Mitigation Plan
 
-- **Teammate for Microservice A**: [Teammate's Name]
+- **Teammate for Microservice A**: Steven Pamplin
 - **Current Status**: The microservice is complete and fully functional.
 - **Access**: The microservice can be accessed via the repository on GitHub. Your teammate should clone the repository and run the microservice locally as documented.
-- **Assistance**: If there are any issues accessing or calling the microservice, I will be available to help. Please contact me at [Your Email].
+- **Assistance**: If there are any issues accessing or calling the microservice, I will be available to help. Please contact me at herrera4@oregonstate.edu.
 - **Notification**: If your teammate cannot access/call the microservice, they should notify you as soon as possible.
 
 ## Conclusion
