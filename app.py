@@ -5,7 +5,7 @@ import json
 app = Flask(__name__)
 
 # Load quotes from JSON file
-with open('quotes.json', 'r') as file:
+with open('quotes.json', 'r', encoding='utf-8') as file:
     quotes = json.load(file)
 
 @app.route('/quotes', methods=['GET'])
@@ -26,14 +26,14 @@ def favorite_quote():
     quote = request.json.get('quote')
     if not quote:
         return jsonify({"error": "No quote provided"}), 400
-    with open('favorites.json', 'a') as file:
-        file.write(json.dumps({"quote": quote}) + '\n')
+    with open('favorites.json', 'a', encoding='utf-8') as file:
+        file.write(json.dumps({"quote": quote}, ensure_ascii=False) + '\n')
     return jsonify({"message": "Quote favorited"}), 201
 
 @app.route('/quotes/favorites', methods=['GET'])
 def get_favorites():
     try:
-        with open('favorites.json', 'r') as file:
+        with open('favorites.json', 'r', encoding='utf-8') as file:
             favorites = [json.loads(line) for line in file]
         return jsonify(favorites)
     except FileNotFoundError:
